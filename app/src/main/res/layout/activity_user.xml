@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.UserActivity"
+    >
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          >
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:weightSum="10">
+
+          <Button
+            android:id="@+id/button_user_disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Déconnexion"
+            android:layout_marginStart="200dp"
+              android:layout_weight="1"
+           />
+
+              <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:layout_below="@id/button_user_disconnect"/>
+
+              <Button
+                android:layout_weight="1"
+                android:layout_below="@id/recyclerView_users"
+                android:id="@+id/button_user_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:gravity="center"
+                android:text="Ajouter User" />
+
+          </LinearLayout>
+      </ScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.AddActivity">
+
+    <TextView
+        android:id="@+id/AddUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter utilisateur"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_add"
+        android:layout_below="@id/AddUser"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:weightSum="10"/>
+
+</RelativeLayout>

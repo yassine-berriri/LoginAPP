@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.fragments.AddUserPersonalInfoFragment"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText_add_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#30ffffff"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
+                android:hint="Nom"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_add_firstName"
+                android:layout_below="@id/editText_add_lastName"
+                android:hint="Prenom"
+
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:background="#30ffffff"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
+                android:inputType="textCapWords"
+                android:imeOptions="actionNext"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/editText_addUserPersonalInfo_DateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_add_firstName"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#30ffffff"
+                android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+                android:drawablePadding="20dp"
+                android:hint="Date de naissance"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_addUserPersonalInfo_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_addUserPersonalInfo_DateOfBirth"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#30ffffff"
+                android:drawableLeft="@drawable/ic_baseline_add_location_24"
+                android:drawablePadding="20dp"
+                android:hint="Adresse"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_addUserPersonalInfo_postalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_addUserPersonalInfo_address"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#30ffffff"
+                android:drawableLeft="@drawable/ic_baseline_add_location_24"
+                android:drawablePadding="20dp"
+                android:hint="Code Postal"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_addUserPersonalInfo_town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_addUserPersonalInfo_postalCode"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#30ffffff"
+                android:drawableLeft="@drawable/ic_baseline_add_location_24"
+                android:drawablePadding="20dp"
+                android:hint="Ville"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_addUserPersonalInfo_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_addUserPersonalInfo_town"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#30ffffff"
+                android:drawableLeft="@drawable/ic_baseline_add_location_24"
+                android:drawablePadding="20dp"
+                android:hint="Pays"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_add_addButton"
+                android:layout_below="@id/editText_addUserPersonalInfo_country"
+                android:text="Suivant"
+                android:backgroundTint="@color/teal_200"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

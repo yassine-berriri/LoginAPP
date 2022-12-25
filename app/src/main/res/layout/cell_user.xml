@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/CardView_cellUser_detail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom : "
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/teal_200" />
+
+                <TextView
+                    android:id="@+id/textView_cellUser_lastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Civilité : "
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/teal_200" />
+
+                <TextView
+                    android:id="@+id/textView_cellUser_civility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Prenom : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/teal_200"/>
+                   <TextView
+                    android:id="@+id/textView_cellUser_firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"/>
+
+               </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/textView_cellUser_firstName"
+                       android:layout_weight="1"
+                       android:text="Email : "
+                       android:layout_margin="5dp"
+                       android:textColor="@color/teal_200"/>
+
+                    <TextView
+                       android:id="@+id/textView_cellUser_email"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/textView_cellUser_firstName"
+                       android:layout_weight="1"
+                       android:layout_margin="5dp"
+                       android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/textView_cellUser_email"
+                       android:layout_weight="1"
+                       android:text="Date de naissance : "
+                       android:layout_margin="5dp"
+                       android:textColor="@color/teal_200"/>
+
+                   <TextView
+                       android:id="@+id/textView_cellUser_dateOfBirth"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_margin="5dp"
+                       android:textColor="@color/black"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/textView_cellUser_dateOfBirth"
+                       android:layout_weight="1"
+                       android:text="Adresse : "
+                       android:layout_margin="5dp"
+                       android:textColor="@color/teal_200"/>
+
+                   <TextView
+                       android:id="@+id/textView_cellUser_address"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_margin="5dp"
+                       android:textColor="@color/black"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/textView_cellUser_dateOfBirth"
+                       android:layout_weight="1"
+                       android:text="Code Postal : "
+                       android:layout_margin="5dp"
+                       android:textColor="@color/teal_200"/>
+
+                   <TextView
+                       android:id="@+id/textView_cellUser_PostalCode"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_margin="5dp"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/textView_cellUser_dateOfBirth"
+                       android:layout_weight="1"
+                       android:text="Ville : "
+                       android:layout_margin="5dp"
+                       android:textColor="@color/teal_200"/>
+
+                   <TextView
+                       android:id="@+id/textView_cellUser_town"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_margin="5dp"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/textView_cellUser_dateOfBirth"
+                       android:layout_weight="1"
+                       android:text="Pays : "
+                       android:layout_margin="5dp"
+                       android:textColor="@color/teal_200"/>
+
+                   <TextView
+                       android:id="@+id/textView_cellUser_country"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_margin="5dp"
+                       android:textColor="@color/black"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
